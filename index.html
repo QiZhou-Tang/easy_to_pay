@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths desktop landscape is-desktop">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epay</title>
+    <meta name="description" content="CZR Is Build Blockchain Applications">
+    <meta name="keywords" content="易付链">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+
+
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public.css">
+    <!-- <link rel="stylesheet" href="slick2/slick.css"> -->
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- <script type="text/javascript" src="slick2/slick.js"></script> -->
+    <script src="js/home.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lte IE 9]><!-->
+    <script src="js/html5shiv.min.js"></script>
+    <!--<![endif]-->
+</head>
+
+<body class="is-site-bg-img is-site-bg-particles is-loaded">
+    <div class="site cnc-index" id="cnc-index">
+
+        <!-- .site-loader -->
+        <div class="site-canvas">
+            <!-- header start -->
+            <header class="site-header" id="header">
+                <nav class="navbar navbar-theme">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="navbar-brand-wrap">
+                                <a class="navbar-brand" href="#">
+                                    <img src="image/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 中英文切换 -->
+                        <!-- <div class="user-prompt-item navbar-right" id="header-language-type" style="position: relative;"> -->
+                        <!-- <a href="javascript:;" class="header-language-trigger slide_tip_trigger" data-subordinate="#header-language-type.slide_tip_trigger">
+                                <img src="images/china.png" class="coin-language" alt="语言">
+                                <i class="iconfont"></i>
+                            </a> -->
+                        <!-- <ul class="banner-language-type slide_tip_panel" data-subordinate="#header-language-type.slide_tip_trigger">
+                            <li class="li-lan-flag">
+                                <a class="j-lang-link" data-lang="en" href="javascript:void(0);">
+                                    <img class="coin-language" src="images/english.png"> English</a>
+                            </li>
+                        </ul> -->
+
+
+                        <!-- .navbar-header -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right" style="font-size: 18px">
+                                <li class="active">
+                                    <a href="#home">首页</a>
+                                </li>
+                                <li>
+                                    <a href="#use">支付场景</a>
+                                </li>
+                                <li>
+                                    <a href="#consultant">技术团队</a>
+                                </li>
+                                <li>
+                                    <a href="#investors">产品体系</a>
+                                </li>
+                                <li>
+                                    <a href="#development">战略合作机构</a>
+                                </li>
+                                <li>
+                                    <a id="change">中英文切换</a>
+                                </li>
+                                <!--<li class="phone-language-trigger j-phone-language-trigger" data-lang="en">
+                                <a href="javascript:;">English（Language）</a>
+                            </li>-->
+                                <!--<li>
+                                <a href="docs/index.html" class="js-analytic">文档</a>
+                            </li>-->
+                                <!--<li><a href="https://xxx.com" class="js-analytic">论坛</a></li>-->
+                                <!--<li><a href="https://xxx.com">新闻</a></li>-->
+                                <!--<li>
+                                <div class="coinmarketcap-currency-widget">
+                                        <span style="font-size: 14px; color:#fff">0.2083 USD
+                                            <span style="color:#ff8e8e">(-3.07%)</span>
+                                        </span>
+                                </div>
+                            </li>-->
+                            </ul>
+                        </div>
+
+                        <!-- .navbar-collapse -->
+                    </div>
+                </nav>
+            </header>
+            <!-- header end -->
+            <!-- <main class="site-main clearfix" style="transform: translateY(0px);"> -->
+
+            <!-- Home start -->
+            <div id="home" class="section block-primary position-r align-c-xs-max" style="height: 1080px;">
+                <div id="particles-js" class="site-bg">
+                    <div class="site-bg-img"></div>
+                    <!-- <div class="site-bg-overlay" style="background-color: rgba(46, 46, 83, 0.5);"></div> -->
+                    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
+                </div>
+
+                <!-- .site-bg -->
+                <div class="container">
+                    <div class="row row-table">
+                        <div class="col-sm-6">
+                            <!-- <div class="col-inner" data-sr="left" data-sr-id="2" style=" visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; "> -->
+
+                            <div class="section-heading">
+                                <h1 style="font-size:48px;color: rgb(255, 255, 255)">易付链
+                                    <br>区块链世界里的支付宝</h1>
+                                <p style="font-size: 48px">
+                                    Alipay in blockchain world
+                                </p>
+                            </div>
+                            <!-- .section-heading -->
+                            <!-- <div class="section-content"> -->
+                            <div class="systems-button">
+                                <div class="systems">
+
+                                    <div class="download">
+                                        <a href="images/white-book.pdf" target="_blank">白皮书</a>
+                                    </div>
+                                    <!-- <div class="systems-options">
+                                                    <span class="systems-available">其它：</span>
+                                                    <a href="javascript:;"
+                                                       onclick="ga('send', 'event', { eventLabel: 'Mac', eventCategory: 'Download', eventAction: 'App'});">Mac</a>
+                                                    <a href="javascript:;">Source</a>
+                                                </div> -->
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- .section-content -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
+                            <div class="col-inner clearfix"> -->
+                    <!-- <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
+                                    src="img/home_02.png" alt="" data-sr="right"> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- Home end -->
+        </div>
+
+
+
+
+        <style>
+            .titleitem {
+                text-align: center;
+                font-size: 26px;
+                font-weight: bold;
+                padding: 40px 0 10px 0
+            }
+
+            .titleitem span {
+                font-size: 18px;
+                font-weight: 100;
+                /* display: inline-block; */
+                /* padding-left: 10px; */
+                color: #666
+            }
+
+            ul.block-01 {
+                display: flex;
+                justify-content: center;
+                color: #666;
+                margin-left: -40px;
+
+            }
+
+
+            ul.block-01 li {
+                float: left;
+                /* width: 300px; */
+                padding-top: 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            ul.block-01 li p {
+                font-size: 14px
+            }
+
+            .paysystem {
+                background: url("./image/ballbgimg.png") no-repeat center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .otherpay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .iphone-qr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('./image/iphoneQR.png') no-repeat center center;
+                /* background-size:cover */
+            }
+
+            .text-info {
+                position: relative;
+                /* left: -500px; */
+            }
+
+            p {
+                /* display: block;
+                    font-family: monospace;
+                    white-space: p; */
+                background: transparent;
+                border: none;
+                color: white;
+            }
+
+            .wrap {
+                width: 800px;
+                margin: auto;
+                border: 5px solid greenyellow;
+            }
+
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .payimg {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .payimg-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .idear {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .idear-container {
+                margin-top: 100px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @media screen and (max-width: 414px) {
+                .wrap {
+                    width: 360px;
+                }
+                .payimg-container {
+                    /* display: block; */
+                    width: 370px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .payimg-container img {
+                    margin-bottom: 50px;
+                }
+                .idear-container {
+                    width: 370px;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .otherpay {
+                    display: none;
+                }
+                .iphone-qr {
+                    margin-left: 1px;
+                }
+                .paysystem img {
+                    width: 100%;
+                }
+
+            }
+        </style>
+        <div class="titleitem" id="use">
+            项目视频
+            <br>
+            <span>project video</span>
+        </div>
+        <ul class="block-01">
+            <li>
+                <h4>203个国家和地区</h4>
+            </li>
+            <li>
+                <h4>18种刚性区块链资产</h4>
+            </li>
+            <li>
+                <h4>5000千种区块链资产支持</h4>
+            </li>
+            <li>
+                <h4>100种支付产品</h4>
+            </li>
+        </ul>
+
+        <div class="wrap">
+            <div class="video-container">
+                <iframe src="https://v.qq.com/iframe/player.html?vid=a0506hzcbon&tiny=0&auto=0" width="560px" height="315px" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="payimg">
+            <div class="payimg-container">
+                <img src="./image/pay.png" style="width: 100%;">
+                <img src="./image/epay.png" style="width: 100%;">
+            </div>
+        </div>
+
+
+        <!-- 技术团队锚点 -->
+        <div class="containerex-team clearfix" id="consultant"></div>
+
+        <!-- 支付场景 -->
+        <div class="paysystem" style="background-color: #3d39e9; height: 784PX; ">
+            <img src="./image/iconall.png">
+        </div>
+
+
+        <div class="otherpay" style="height: 758px;">
+            <img src="./image/everyicon.png">
+        </div>
+
+        <div class="iphone-qr" style="height: 757px;">
+            <div class="text-info" style="width: 1366px;">
+                <p class="text1" style=" font-size: 40px;font-weight: 400;font-family: 微软雅黑;">
+                    全球跨境 找Epay没错
+                    <br> 无开户费 无月费无国界
+                    <br> 无汇率差 无语种障碍
+                    <br> 只需要一个Epay账户
+                </p>
+                <p class="text2" style="font-size: 20px; line-height: 30px;">
+                    全球1.9亿家合作商家触手可得不 管您在地球的哪个角.
+                    <br>拥有Epay账户 就能在全球203个国家和地区痛快的消费
+                    <br> 您可以用最常用的BTC、ETC或更 多的区块链资产融合
+                    <br>多种方式支付 EPay支持小数点后18位买一个泡泡糖
+                    <br> 都能用BTC支付!全球跨境支付就是这 么简单。
+                </p>
+            </div>
+        </div>
+
+        <div class="section-exchange clearfix">
+
+            <!-- <div class="titleitem">創始人</div> -->
+            <!-- 产品体系锚点 -->
+            <div class="containerex-team expert-team clearfix" id="investors"></div>
+
+            <style>
+                #investors {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            </style>
+
+            <div class="titleitem" style="font-size: 50px">技术团队</div>
+            <div class="containerex-team expert-team clearfix" id="investors" style="height: 404px;">
+                <ul class="team-wrap">
+                    <li class="team-item j-team-item">
+                        <div class="member-avatar">
+                            <img src="./image/Kevin.png" alt="头像">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Kevin</h4>
+                            <h5 class="member-position">商务架构师</h5>
+                        </div>
+                        <div class="j-member-detail member-detail-wrap">
+                            <h4 class="member-name">Kevin</h4>
+                            <p class="member-detail">
+                                商务架构师
+                                <br> 金融律师
+                                <br> 互联网领域的顶层商业架构设计
+                                <br> 金融法律服务
+                            </p>
+                        </div>
+                        <div class="down-arrow-wrap j-down-arrow-wrap">
+                            <div class="down-arrow"></div>
+                        </div>
+                    </li>
+                    <li class="team-item j-team-item">
+                        <div class="member-avatar">
+                            <img src="image/Bonnie.png" alt="头像">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Bonnie</h4>
+                            <h5 class="member-position">技术团队负责人</h5>
+                        </div>
+                        <div class="j-member-detail member-detail-wrap">
+                            <h4 class="member-name">Bonnie</h4>
+                            <p class="member-detail">
+                                资深C++工程師
+                                <br> 资深安全检测工程师
+                                <br> 熟悉区块链底层应用技术
+                                <br> 熟悉股票交易系统
+                                <br> 熟悉金融领域电脑软件规则
+                            </p>
+                        </div>
+                        <div class="down-arrow-wrap j-down-arrow-wrap">
+                            <div class="down-arrow"></div>
+                        </div>
+                    </li>
+                    <li class="team-item j-team-item">
+                        <div class="member-avatar">
+                            <img src="image/David.png" alt="头像">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">David</h4>
+                            <h5 class="member-position">区块链总架构师</h5>
+                        </div>
+                        <div class="j-member-detail member-detail-wrap">
+                            <h4 class="member-name">David</h4>
+                            <p class="member-detail">
+                                多年区块链技术开发和实践经验
+                                <br> 熟悉多代虚拟货币
+                                <br> 熟悉区块链产品底层代码技术
+                            </p>
+                        </div>
+                        <div class="down-arrow-wrap j-down-arrow-wrap">
+                            <div class="down-arrow"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <style>
+            .paypal {
+                margin-top: 80px;
+                width: 1000px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            @media screen and (max-width: 414px) {
+                .paypal {
+                    width: 380px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+
+            .begin {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 100px;
+            }
+        </style>
+        <!-- 战略机构 -->
+        <div class="no-blame-wrap" id="development">
+            <div class="no-blame" style="text-align: center;">
+                <p>
+                    <img src="./image/战略合作机构.png" alt="">
+                </p>
+                <div class="paypal" style="width: 100%;">
+                    <img src="./image/微信.png" alt="">
+                    <img src="./image/Alipay.png" alt="">
+                    <img src="./image/JCB.png" alt="">
+                    <img src="./image/VISA.png" alt="">
+                    <img src="./image/paypal.png" alt="">
+                </div>
+                <div class="paypal" style="width: 100%;">
+                    <img src="./image/master.png" alt="">
+                    <img src="./image/UnionPay.png" alt="">
+                    <img src="./image/quick.png" alt="">
+                    <img src="./image/americanexpress.png" alt="">
+                    <img src="./image/图层27.png" alt="">
+                </div>
+                <div class="begin">
+                    <img src="./image/Eapy.png" alt="">
+                </div>
+                <div class="idear">
+                    <div class="idear-container">
+                        <img src="./image/Epay1.png" style="width: 100%;" alt="">
+                        <img src="./image/Epay2.png" style="width: 100%;" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- </main> -->
+        <!-- footer -->
+        <footer class="site-footer block-invert">
+            <img src="./image//易付链,区块链世界里的支付宝.png" alt="">
+            <br>
+            <img src="./image//Alipayinblockchainworld.png" alt="">
+            <p class="site-footer-copyright">
+                © CopyRight 2017-2018
+                <!-- <br> CANONCHAIN.COM Inc. All Rights Reserved. -->
+            </p>
+    </div>
+    </footer>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $("#change").click(function () {
+            translate();
+        })
+    </script>
+    <script type="text/javascript" src="js/script.min.8cf8fe3e.js"></script>
+    <script src="js/scripts.js"></script> 
+    <script src="js/getUa.js"></script>
+    <script src="js/slide-tips.js"></script> 
+    <script src="js/cnc-index.js"></script> 
+    <script src="js/public.js"></script>
+    <script src="./js/particles-style.js"></script>
+    <script type="text/javascript" src="./js/language.js"></script>
+
+
+</body>
+
+</html>
