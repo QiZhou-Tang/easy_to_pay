@@ -7,8 +7,8 @@
     <title>Epay</title>
     <meta name="description" content="CZR Is Build Blockchain Applications">
     <meta name="keywords" content="易付链">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <link href="favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" href="css/style.css">
@@ -72,17 +72,17 @@
                                     <a href="#use">支付场景</a>
                                 </li>
                                 <li>
-                                    <a href="#consultant">技术团队</a>
+                                    <a href="#consultant">产品体系</a>
                                 </li>
                                 <li>
-                                    <a href="#investors">产品体系</a>
+                                    <a href="#investors">技术团队</a>
                                 </li>
                                 <li>
                                     <a href="#development">战略合作机构</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a id="change">中英文切换</a>
-                                </li>
+                                </li> -->
                                 <!--<li class="phone-language-trigger j-phone-language-trigger" data-lang="en">
                                 <a href="javascript:;">English（Language）</a>
                             </li>-->
@@ -203,8 +203,27 @@
             .paysystem {
                 background: url("./image/ballbgimg.png") no-repeat center center;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
+
+            ul.paysystem-container {
+                /* width: 1366px; */
+                display: flex;
+                justify-content: space-around;
+                -webkit-padding-start: 0px;
+                flex-wrap: wrap;
+            }
+
+            ul.paysystemtitle img {
+                margin: 0 0 200px;
+            }
+
+            ul.paysystem-container li p {
+                text-align: center;
+                font-size: 20px;
+                margin: 10px 0 0;
             }
 
             .otherpay {
@@ -281,6 +300,12 @@
                 justify-content: space-between;
             }
 
+            p.text1 {
+                font-size: 40px;
+                font-weight: 400;
+                font-family: 微软雅黑;
+            }
+
             @media screen and (max-width: 414px) {
                 .wrap {
                     width: 360px;
@@ -309,7 +334,12 @@
                 .paysystem img {
                     width: 100%;
                 }
-
+                .paysystem {
+                    flex-direction: unset;
+                }
+                .paysystemtitle {
+                    display: none;
+                }
             }
         </style>
         <div class="titleitem" id="use">
@@ -346,13 +376,43 @@
             </div>
         </div>
 
-
         <!-- 技术团队锚点 -->
         <div class="containerex-team clearfix" id="consultant"></div>
 
+
         <!-- 支付场景 -->
         <div class="paysystem" style="background-color: #3d39e9; height: 784PX; ">
-            <img src="./image/iconall.png">
+            <!-- <img src="./image/iconall.png"> -->
+            <ul class="paysystemtitle">
+                <img src="/image/paysystemtitle.png" alt="">
+            </ul>
+
+            <ul class="paysystem-container" style="width: 1366px;">
+                <li>
+                    <img src="/image/paysystemtext1.png" alt="">
+                    <p>区块链支付系统</p>
+                </li>
+                <li>
+                    <img src="/image/paysystemtext2.png" alt="">
+                    <p>移动支付系统</p>
+                </li>
+                <li>
+                    <img src="/image/paysystemtext3.png" alt="">
+                    <p>聚合支付系统</p>
+                </li>
+                <li>
+                    <img src="/image/paysystemtext4.png" alt="">
+                    <p>预付卡系统</p>
+                </li>
+                <li>
+                    <img src="/image/paysystemtext5.png" alt="">
+                    <p>跨境支付系统</p>
+                </li>
+                <li>
+                    <img src="/image/paysystemtext6.png" alt="">
+                    <p>征信系统</p>
+                </li>
+            </ul>
         </div>
 
 
@@ -362,18 +422,20 @@
 
         <div class="iphone-qr" style="height: 757px;">
             <div class="text-info" style="width: 1366px;">
-                <p class="text1" style=" font-size: 40px;font-weight: 400;font-family: 微软雅黑;">
-                    全球跨境 找Epay没错
-                    <br> 无开户费 无月费无国界
-                    <br> 无汇率差 无语种障碍
+                <p class="text1">
+                    全球跨境 &nbsp;&nbsp; 找Epay没错
+                    <br> 无开户费 &nbsp;&nbsp; 无月费无国界
+                    <br> 无汇率差 &nbsp;&nbsp; 无语种障碍
                     <br> 只需要一个Epay账户
                 </p>
-                <p class="text2" style="font-size: 20px; line-height: 30px;">
-                    全球1.9亿家合作商家触手可得不 管您在地球的哪个角.
-                    <br>拥有Epay账户 就能在全球203个国家和地区痛快的消费
-                    <br> 您可以用最常用的BTC、ETC或更 多的区块链资产融合
-                    <br>多种方式支付 EPay支持小数点后18位买一个泡泡糖
-                    <br> 都能用BTC支付!全球跨境支付就是这 么简单。
+                <p class="text2" style="font-size: 20px; line-height: 30px;text-indent: 50px; ">
+                    全球1.9亿家合作商家触手可得不管您在地球的哪个角落
+                    <br>拥有Epay账户就能在全球203个国家和地区痛快的消费
+                </p>
+                <p class="text2" style="font-size: 20px; line-height: 30px;text-indent: 50px; ">
+                    您可以用最常用的BTC、ETC或更多的区块链资产融合
+                    <br>多种方式支付EPay支持小数点后18位买一个泡泡糖
+                    <br>都能用BTC支付!全球跨境支付就是这么简单。
                 </p>
             </div>
         </div>
@@ -393,7 +455,7 @@
             </style>
 
             <div class="titleitem" style="font-size: 50px">技术团队</div>
-            <div class="containerex-team expert-team clearfix" id="investors" style="height: 404px;">
+            <div class="containerex-team expert-team clearfix" id="investors" style="height: 404px; margin-bottom: 50px;">
                 <ul class="team-wrap">
                     <li class="team-item j-team-item">
                         <div class="member-avatar">
@@ -476,9 +538,13 @@
 
             @media screen and (max-width: 414px) {
                 .paypal {
-                    width: 380px;
                     display: flex;
-                    flex-direction: column;
+                    /* flex-direction: column; */
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+                div.iphone-qr div.text-info p.text1 {
+                    font-size: 33px;
                 }
 
             }
@@ -495,26 +561,26 @@
                 <p>
                     <img src="./image/战略合作机构.png" alt="">
                 </p>
-                <div class="paypal" style="width: 100%;">
-                    <img src="./image/微信.png" alt="">
+                <div class="paypal">
+                    <img src="./image/wechat.png" alt="">
                     <img src="./image/Alipay.png" alt="">
                     <img src="./image/JCB.png" alt="">
                     <img src="./image/VISA.png" alt="">
                     <img src="./image/paypal.png" alt="">
                 </div>
-                <div class="paypal" style="width: 100%;">
+                <div class="paypal">
                     <img src="./image/master.png" alt="">
                     <img src="./image/UnionPay.png" alt="">
                     <img src="./image/quick.png" alt="">
                     <img src="./image/americanexpress.png" alt="">
-                    <img src="./image/图层27.png" alt="">
+                    <img src="./image/pay27.png" alt="">
                 </div>
                 <div class="begin">
                     <img src="./image/Eapy.png" alt="">
                 </div>
                 <div class="idear">
                     <div class="idear-container">
-                        <img src="./image/Epay1.png" style="width: 100%;" alt="">
+                        <img src="./image/Epay1.png" style="width: 100%; margin-right: 50px" alt="">
                         <img src="./image/Epay2.png" style="width: 100%;" alt="">
                     </div>
                 </div>
@@ -525,9 +591,9 @@
         <!-- </main> -->
         <!-- footer -->
         <footer class="site-footer block-invert">
-            <img src="./image//易付链,区块链世界里的支付宝.png" alt="">
+            <img src="./image/footertitle.png" alt="">
             <br>
-            <img src="./image//Alipayinblockchainworld.png" alt="">
+            <img src="./image/Alipayinblockchainworld.png" alt="">
             <p class="site-footer-copyright">
                 © CopyRight 2017-2018
                 <!-- <br> CANONCHAIN.COM Inc. All Rights Reserved. -->
@@ -542,13 +608,13 @@
         })
     </script>
     <script type="text/javascript" src="js/script.min.8cf8fe3e.js"></script>
-    <script src="js/scripts.js"></script> 
+    <script src="js/scripts.js"></script>
     <script src="js/getUa.js"></script>
-    <script src="js/slide-tips.js"></script> 
-    <script src="js/cnc-index.js"></script> 
+    <script src="js/slide-tips.js"></script>
+    <script src="js/cnc-index.js"></script>
     <script src="js/public.js"></script>
     <script src="./js/particles-style.js"></script>
-    <script type="text/javascript" src="./js/language.js"></script>
+    <!-- <script type="text/javascript" src="./js/language.js"></script> -->
 
 
 </body>
