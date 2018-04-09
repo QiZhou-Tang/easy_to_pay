@@ -230,14 +230,28 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 150px;
+                /* height: 900px; */
             }
+
+            .otherpay-container {
+                width: 1200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .otherpay-container ul li img {
+                margin: 5px
+            }
+
 
             .iphone-qr {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background: url('./image/iphoneQR.png') no-repeat center center;
-                /* background-size:cover */
+                background-size: cover
             }
 
             .text-info {
@@ -325,11 +339,8 @@
                     flex-direction: column;
 
                 }
-                .otherpay {
-                    display: none;
-                }
                 .iphone-qr {
-                    margin-left: 1px;
+                    background-position-x: 0px;
                 }
                 .paysystem img {
                     width: 100%;
@@ -415,10 +426,45 @@
             </ul>
         </div>
 
-
-        <div class="otherpay" style="height: 758px;">
-            <img src="./image/everyicon.png">
+        <div class="otherpay">
+            <div class="otherpay-container" style=" width: 1200px;">
+                <!-- <img src="./image/everyicon.png"> -->
+                <ul style="margin: 110px 0; -webkit-padding-start: 0;">
+                    <img src="/image/epaylogobig.png" alt="">
+                    <p style="font: 2em sans-serif; color: #474747; margin-top: 28px;">区块链里的支付宝</p>
+                </ul>
+                <ul style="display: flex;flex-wrap: wrap; justify-content: center; -webkit-padding-start: 0;">
+                    <li>
+                        <img src="/image/e-c.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/retail.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/tickets.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/games.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/finance.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/edu.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/medical.png" alt="">
+                    </li>
+                    <li>
+                        <img src="/image/others.png" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
+
+
+        <!-- 产品体系锚点 -->
+        <div class="containerex-team expert-team clearfix" id="investors"></div>
 
         <div class="iphone-qr" style="height: 757px;">
             <div class="text-info" style="width: 1366px;">
@@ -443,8 +489,6 @@
         <div class="section-exchange clearfix">
 
             <!-- <div class="titleitem">創始人</div> -->
-            <!-- 产品体系锚点 -->
-            <div class="containerex-team expert-team clearfix" id="investors"></div>
 
             <style>
                 #investors {
@@ -559,7 +603,7 @@
         <div class="no-blame-wrap" id="development">
             <div class="no-blame" style="text-align: center;">
                 <p>
-                    <img src="./image/战略合作机构.png" alt="">
+                    <img src="./image/unitstystem.png" alt="">
                 </p>
                 <div class="paypal">
                     <img src="./image/wechat.png" alt="">
