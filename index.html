@@ -66,7 +66,10 @@
                         <div class="collapse navbar-collapse" id="navbar-collapse">
                             <ul class="nav navbar-nav navbar-right" style="font-size: 18px">
                                 <li class="active">
-                                    <a href="#home">首页</a>
+                                    <a href="#home">
+                                        首页
+                                        <!-- {en}home -->
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="#use">支付场景</a>
@@ -80,9 +83,14 @@
                                 <li>
                                     <a href="#development">战略合作机构</a>
                                 </li>
+                                <!-- <li id="btns">
+                                    <a class="btn" active onclick="setlang('default',this)" href="javascript:;">中文</a>
+                                    <a class="btn" onclick="setlang('en',this)" href="javascript:;">English</a>
+                                </li> -->
                                 <!-- <li>
                                     <a id="change">中英文切换</a>
                                 </li> -->
+
                                 <!--<li class="phone-language-trigger j-phone-language-trigger" data-lang="en">
                                 <a href="javascript:;">English（Language）</a>
                             </li>-->
@@ -100,6 +108,7 @@
                             </li>-->
                             </ul>
                         </div>
+
 
                         <!-- .navbar-collapse -->
                     </div>
@@ -122,39 +131,25 @@
                         <div class="col-sm-6">
                             <!-- <div class="col-inner" data-sr="left" data-sr-id="2" style=" visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; "> -->
 
-                            <div class="section-heading">
-                                <h1 style="font-size:48px;color: rgb(255, 255, 255)">易付链
+                            <div class="section-heading" style="text-align: center;">
+                                <h1 style="font-size:48px;font-weight: bold; color: rgb(255, 255, 255)">易付链
                                     <br>区块链世界里的支付宝</h1>
                                 <p style="font-size: 48px">
                                     Alipay in blockchain world
                                 </p>
+                                <a  href="" target="_blank"><img src="/image/button.png" style="margin-top: 100px;"></a>
                             </div>
-                            <!-- .section-heading -->
-                            <!-- <div class="section-content"> -->
-                            <div class="systems-button">
+
+                            <!-- <div class="systems-button">
                                 <div class="systems">
 
                                     <div class="download">
                                         <a href="images/white-book.pdf" target="_blank">白皮书</a>
                                     </div>
-                                    <!-- <div class="systems-options">
-                                                    <span class="systems-available">其它：</span>
-                                                    <a href="javascript:;"
-                                                       onclick="ga('send', 'event', { eventLabel: 'Mac', eventCategory: 'Download', eventAction: 'App'});">Mac</a>
-                                                    <a href="javascript:;">Source</a>
-                                                </div> -->
                                 </div>
-                            </div>
-                            <!-- </div> -->
-                            <!-- .section-content -->
+                            </div> -->
                         </div>
                     </div>
-                    <!-- <div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
-                            <div class="col-inner clearfix"> -->
-                    <!-- <img class="img-responsive float-r-sm-min m-x-auto-xs-max"
-                                    src="img/home_02.png" alt="" data-sr="right"> -->
-                    <!-- </div> -->
-                    <!-- </div> -->
                 </div>
             </div>
             <!-- Home end -->
@@ -646,11 +641,35 @@
     </footer>
     </div>
     </div>
+    <script type="text/javascript" src="/js/translater.js"></script>
     <script type="text/javascript">
-        $("#change").click(function () {
-            translate();
-        })
+        var Translater = new Translater();
+
+        var btns = document.getElementById('btns');
+
+        for (var i = 0; i < btns.childNodes.length; i++) {
+            var str = btns.childNodes[i].outerHTML;
+            if (str) {
+                str = str.match(/onclick=\"setlang\(\'(.*?)\'\,/);
+                if (str.length > 1 && str[1] === Translater.lang_name) {
+                    btns.childNodes[i].className = 'btn active'
+                } else {
+                    btns.childNodes[i].className = 'btn'
+                }
+            }
+        }
+
+        function setlang(name, self) {
+            Translater.setLang(name);
+            var btns = self.parentNode.children;
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].className = 'btn';
+            }
+            self.className = 'btn active';
+        }
     </script>
+
+
     <script type="text/javascript" src="js/script.min.8cf8fe3e.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/getUa.js"></script>
