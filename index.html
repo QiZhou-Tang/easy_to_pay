@@ -137,7 +137,9 @@
                                 <p style="font-size: 48px">
                                     Alipay in blockchain world
                                 </p>
-                                <a  href="" target="_blank"><img src="/image/button.png" style="margin-top: 100px;"></a>
+                                <a href="" target="_blank">
+                                    <img src="/image/button.png" style="margin-top: 100px;">
+                                </a>
                             </div>
 
                             <!-- <div class="systems-button">
@@ -246,7 +248,8 @@
                 justify-content: center;
                 align-items: center;
                 background: url('./image/iphoneQR.png') no-repeat center center;
-                background-size: cover
+                background-size: cover;
+                padding: 18px;
             }
 
             .text-info {
@@ -320,13 +323,17 @@
                     width: 360px;
                 }
                 .payimg-container {
-                    /* display: block; */
+                    display: block;
                     width: 370px;
                     display: flex;
                     flex-direction: column;
                 }
                 .payimg-container img {
                     margin-bottom: 50px;
+                }
+                .payimg-container img.text-info {
+                    position: relative;
+                    left: -75px;
                 }
                 .idear-container {
                     width: 370px;
@@ -346,6 +353,14 @@
                 .paysystemtitle {
                     display: none;
                 }
+                ul.block-01{
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
+                ul.block-01 li {
+                    padding-top: 0;
+                    text-align: center;
+                }
             }
         </style>
         <div class="titleitem" id="use">
@@ -355,6 +370,9 @@
         </div>
         <ul class="block-01">
             <li>
+                <h4>100种支付产品</h4>
+            </li>
+            <li>
                 <h4>203个国家和地区</h4>
             </li>
             <li>
@@ -362,9 +380,6 @@
             </li>
             <li>
                 <h4>5000千种区块链资产支持</h4>
-            </li>
-            <li>
-                <h4>100种支付产品</h4>
             </li>
         </ul>
 
@@ -378,7 +393,8 @@
         <div class="payimg">
             <div class="payimg-container">
                 <img src="./image/pay.png" style="width: 100%;">
-                <img src="./image/epay.png" style="width: 100%;">
+                <img class="text-info" src="./image/epay.png" style="width: 100%;">
+                <img src="./image/mobil-epay.jpg" style="width: 100%; display: none;">
             </div>
         </div>
 
@@ -456,6 +472,7 @@
                 </ul>
             </div>
         </div>
+
 
 
         <!-- 产品体系锚点 -->
@@ -583,7 +600,13 @@
                     justify-content: space-evenly;
                 }
                 div.iphone-qr div.text-info p.text1 {
-                    font-size: 33px;
+                    font-size: 30px;
+                }
+                .paypal img {
+                    margin: 20px;
+                }
+                .no-blame-wrap {
+                    margin-top: 130px;
                 }
 
             }
