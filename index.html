@@ -512,7 +512,7 @@
 
             <div class="titleitem" style="font-size: 50px">技术团队</div>
             <div class="containerex-team expert-team clearfix" id="investors" style="height: 404px; margin-bottom: 50px;">
-                <ul class="team-wrap">
+                <ul class="team-wrap" style="padding: 0;">
                     <li class="team-item j-team-item">
                         <div class="member-avatar">
                             <img src="./image/Kevin.png" alt="头像">
@@ -584,12 +584,16 @@
 
         <style>
             .paypal {
-                margin-top: 80px;
+                /* margin-top: 80px; */
                 width: 1000px;
                 display: flex;
-                justify-content: space-between;
+                flex-flow: wrap;
+                justify-content: center;
                 align-items: center;
-                width: 100%;
+                /* width: 100%; */
+            }
+            .paypal img {
+                margin: 15px 35px;
             }
 
             @media screen and (max-width: 414px) {
@@ -598,15 +602,19 @@
                     /* flex-direction: column; */
                     flex-wrap: wrap;
                     justify-content: space-evenly;
+                    width: auto;
                 }
                 div.iphone-qr div.text-info p.text1 {
                     font-size: 30px;
                 }
                 .paypal img {
-                    margin: 20px;
+                    margin: 23px;
                 }
                 .no-blame-wrap {
-                    margin-top: 130px;
+                    margin-top: 150px;
+                }
+                .idear-container img.idearNb2 {
+                    margin-top: 10px;
                 }
 
             }
@@ -614,7 +622,7 @@
             .begin {
                 display: flex;
                 justify-content: flex-start;
-                margin-top: 100px;
+                margin-top: 60px;
             }
         </style>
         <!-- 战略机构 -->
@@ -626,16 +634,14 @@
                 <div class="paypal">
                     <img src="./image/wechat.png" alt="">
                     <img src="./image/Alipay.png" alt="">
-                    <img src="./image/JCB.png" alt="">
                     <img src="./image/VISA.png" alt="">
-                    <img src="./image/paypal.png" alt="">
-                </div>
-                <div class="paypal">
                     <img src="./image/master.png" alt="">
                     <img src="./image/UnionPay.png" alt="">
                     <img src="./image/quick.png" alt="">
                     <img src="./image/americanexpress.png" alt="">
+                    <img src="./image/JCB.png" alt="">
                     <img src="./image/pay27.png" alt="">
+                    <img src="./image/paypal.png" alt="">                    
                 </div>
                 <div class="begin">
                     <img src="./image/Eapy.png" alt="">
@@ -643,7 +649,7 @@
                 <div class="idear">
                     <div class="idear-container">
                         <img src="./image/Epay1.png" style="width: 100%; margin-right: 50px" alt="">
-                        <img src="./image/Epay2.png" style="width: 100%;" alt="">
+                        <img class="idearNb2" src="./image/Epay2.png" style="width: 100%;" alt="">
                     </div>
                 </div>
 
